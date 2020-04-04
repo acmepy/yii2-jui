@@ -40,6 +40,13 @@ use yii\helpers\Html;
  */
 class ProgressBar extends Widget
 {
+    /*necesario para Inputwidget*/
+    public $name = '';
+    public $model;
+    public $attribute;
+    /*necesario para Inputwidget*/
+
+    
     /**
      * Initializes the widget.
      */
