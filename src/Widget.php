@@ -15,7 +15,7 @@ use yii\helpers\Json;
  * @author Alexander Kochetov <creocoder@gmail.com>
  * @since 2.0
  */
-class Widget extends \yii\base\Widget
+class Widget extends \yii\widgets\InputWidget #\yii\base\Widget
 {
     /**
      * @var array the HTML attributes for the widget container tag.
