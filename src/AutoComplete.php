@@ -68,6 +68,9 @@ class AutoComplete extends InputWidget
     public function renderWidget()
     {
         if ($this->hasModel()) {
+			if ($this->model->hasErrors($this->attribute)) {
+				Html::addCssClass($this->options, $this->form->errorCssClass);
+			}
             return Html::activeTextInput($this->model, $this->attribute, $this->options);
         }
         return Html::textInput($this->name, $this->value, $this->options);
